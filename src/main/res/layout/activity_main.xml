@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editId"
+        app:layout_constraintTop_toBottomOf="@+id/editId" />
+
+    <EditText
+        android:id="@+id/editMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editName"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text=" Add data"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnViewAll"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpdate"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toEndOf="@+id/btnViewAll" />
+
+    <Button
+        android:id="@+id/btnViewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="View all"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSession" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="update"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonAdd"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="delete"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAdd"
+        app:layout_constraintStart_toStartOf="@+id/buttonAdd"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdd" />
+
+    <TextView
+        android:id="@+id/textid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editId"
+        app:layout_constraintStart_toStartOf="@+id/textName" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qualification"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editName"
+        app:layout_constraintStart_toStartOf="@+id/textMarks" />
+
+    <TextView
+        android:id="@+id/textMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MARKS"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editMarks"
+        app:layout_constraintStart_toStartOf="@+id/textRollNumber" />
+
+    <EditText
+        android:id="@+id/editSession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editRollNumber"
+        app:layout_constraintTop_toBottomOf="@+id/editRollNumber" />
+
+    <TextView
+        android:id="@+id/textSession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="SESSION"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editSession"
+        app:layout_constraintEnd_toStartOf="@+id/editSession"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editRollNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editMarks"
+        app:layout_constraintTop_toBottomOf="@+id/editMarks" />
+
+    <TextView
+        android:id="@+id/textRollNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROLL NUMBER"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editRollNumber"
+        app:layout_constraintStart_toStartOf="@+id/textSession" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
